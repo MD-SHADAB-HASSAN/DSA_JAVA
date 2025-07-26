@@ -24,7 +24,7 @@ In JAVA queues store and processes the data in FIFO(First In First Out) order. I
 6.Linked List
 A linked list is a dynamic data structure whose size increases as you add the elements and decreases as you remove the elements from the list and the elements (nodes) are connected by pointers. Each node contains data and a reference (link) to the next node.
 
-7. Trees
+7.Trees
 Tree data structure is a hierarchical structure that is used to represent and organize data in the form of parent child relationship. Where the topmost node of the tree is called the root, and the nodes below it are called the child nodes.
 
 8.Hashing
