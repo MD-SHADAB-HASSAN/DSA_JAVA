@@ -1,9 +1,9 @@
-public class Linkedlist{
-    public static class Node{
+public class Linkedlist {
+    public static class Node {
         int data;
         Node next;
 
-        public Node(int data){
+        public Node(int data) {
             this.data = data;
             this.next = null;
         }
@@ -13,48 +13,62 @@ public class Linkedlist{
     public static Node head;
     public static Node tail;
 
-    public void addFisrt(int data){
-        //create newnode
+    public void addFisrt(int data) {
+        // create newnode
         Node newNode = new Node(data);
-        if(head == null){
+        if (head == null) {
             head = tail = newNode;
             return;
         }
 
-        //Link head with newnode
+        // Link head with newnode
         newNode.next = head;
 
-        //head-->newNode
+        // head-->newNode
         head = newNode;
     }
 
-    public void addLast(int data){
-        //craete newNode
+    public void addLast(int data) {
+        // craete newNode
         Node newNode = new Node(data);
-        if(head == null){
+        if (head == null) {
             head = tail = newNode;
             return;
         }
 
-        //Link NewNode with Tail
+        // Link NewNode with Tail
         tail.next = newNode;
-        //tail-->newNode
+        // tail-->newNode
         tail = newNode;
     }
-    
+
+    public void print() {
+        if (head == null) {
+            System.out.print("ll is Empty");
+        }
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + "->");
+            temp = temp.next;
+        }
+        System.out.println("null");
+
+    }
 
     public static void main(String[] args) {
-     Linkedlist ll= new Linkedlist();
-     ll.addFisrt(5);
-     ll.addFisrt(3);
-     ll.addFisrt(1);
-     ll.addLast(6);
-     ll.addLast(8);
-     ll.addLast(9);
-     Node currNode = head;
-     while(currNode!=null){
-        System.out.println(currNode.data);
-        currNode = currNode.next;
-     }   
+        Linkedlist ll = new Linkedlist();
+        ll.print();
+        ll.addFisrt(5);
+        ll.print();
+        ll.addFisrt(3);
+        ll.print();
+        ll.addFisrt(1);
+        ll.print();
+        ll.addLast(6);
+        ll.print();
+        ll.addLast(8);
+        ll.print();
+        ll.addLast(9);
+        ll.print();
     }
 }
