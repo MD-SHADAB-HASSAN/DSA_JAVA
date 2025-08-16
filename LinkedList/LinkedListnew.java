@@ -39,19 +39,7 @@ public class LinkedListnew{
         System.out.println("null");
     }
 
-    public void reverse(){
-        Node prev = null;
-        Node curr = tail= head;
-        Node next;
-
-        while(curr != null){
-            next = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = next;
-        }
-        head = prev;
-    }
+   
 
     public static void main(String[] args){
         LinkedListnew ll = new LinkedListnew();
@@ -62,8 +50,8 @@ public class LinkedListnew{
         ll.addFirst(6);
         ll.addFirst(3);
         ll.print();
-        ll.reverse();
-        ll.print();
+        
     }
+
 
 }
