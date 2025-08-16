@@ -1,6 +1,6 @@
 
 
-public class AddNumInLinkedlist {
+public class Linkedlist {
     public static class Node {
         int data;
         Node next;
@@ -142,3 +142,4 @@ public class AddNumInLinkedlist {
     }
 
 }
+
