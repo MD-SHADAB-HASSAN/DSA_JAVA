@@ -1,6 +1,6 @@
 
 
-public class SearchLinkedlist {
+public class Linkedlist {
     public static class Node {
         int data;
         Node next;
@@ -60,66 +60,7 @@ public class SearchLinkedlist {
 
     }
 
-    // public void add(int idx,int data){
-    //     if(idx == 0){
-    //         addFisrt(data);
-    //         return;
-    //     }
-    //     Node newNode = new Node(data);
-    //     size++;
-    //     Node temp = head;
-    //     int i = 0;
-    //     while(i<idx-1){
-    //         temp = temp.next;
-    //         i++;
-    //     }
-    //     //i = idx -1;temp -> prev
-    //     newNode.next = temp.next;
-    //     temp.next = newNode;
-    // }
-
-
-    // public int removeFirst(){
-    //     if(size == 0){
-    //         System.out.println("LL is Empty");
-    //         return Integer.MIN_VALUE;
-    //     }
-    //     else if(size == 1){
-    //         int val = head.data;
-    //         head = tail = null;
-    //         size = 0;
-    //         return  val; 
-
-    //     }
-    //     int val = head.data;
-    //     head = head.next;
-    //     size--;
-    //     return val;
-    // }
-
-    // public int removeLast(){
-    //     if(size == 0){
-    //         System.out.println("Likedlist is Empty ");
-    //         return Integer.MIN_VALUE;
-    //     }
-    //     else if(size == 1){
-    //         int val = head.data;
-    //         head = tail = null;
-    //         size = 0;
-    //         return  val;
-    //     }
-
-    //     Node prev = head;
-    //     for(int i = 0; i < size-2; i++){
-    //         prev = prev.next;
-    //     }
-    //     int val = prev.next.data;
-    //     prev.next = null;
-    //     tail = prev;
-    //     size--;
-    //     return val;
-    // }
-
+   
         public int helper( Node head,int key){
         if(head == null){
             return -1;
@@ -155,19 +96,7 @@ public class SearchLinkedlist {
         return help(head, key);
     }
 
-    // public void reverse(){
-    //     Node prev = null;
-    //     Node curr = tail = head;
-    //     Node next;
-
-    //     while(curr != null){
-    //         next = curr.next;
-    //         curr.next = prev;
-    //         prev = curr;
-    //         curr = next;
-    //     }
-    //     head = prev;
-    // }
+    
     public static void main(String[] args) {
         Linkedlist ll = new Linkedlist();
         ll.print();
@@ -187,4 +116,5 @@ public class SearchLinkedlist {
          
         
     }
+
 }
