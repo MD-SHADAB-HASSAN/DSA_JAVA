@@ -120,54 +120,7 @@ public class AddNumInLinkedlist {
         return val;
     }
 
-    //     public int helper( Node head,int key){
-    //     if(head == null){
-    //         return -1;
-    //     }
-    //     if(head.data == key){
-    //         return 0;
-    //     }
-    //     int idx = helper(head.next, key);
-    //     if(idx == -1){
-    //         return  -1;
-    //     }
-    //     return idx+1;
 
-    // }
-    // public int recSearch(int key){
-    //     return helper(head, key);
-    // }
-
-    // public int help(Node stNode,int key){
-    //     Node temp = stNode;
-    //     int idx = 0;
-
-    //     while(temp != null){
-    //         if(temp.data == key){
-    //             return  idx;
-    //         }
-    //         temp = temp.next;
-    //         idx++;
-    //     }
-    //     return -1;
-    // }
-    // public int iterSearch(int key){
-    //     return help(head, key);
-    // }
-
-    // public void reverse(){
-    //     Node prev = null;
-    //     Node curr = tail = head;
-    //     Node next;
-
-    //     while(curr != null){
-    //         next = curr.next;
-    //         curr.next = prev;
-    //         prev = curr;
-    //         curr = next;
-    //     }
-    //     head = prev;
-    // }
     public static void main(String[] args) {
         Linkedlist ll = new Linkedlist();
         ll.print();
@@ -187,4 +140,5 @@ public class AddNumInLinkedlist {
          
         
     }
+
 }
