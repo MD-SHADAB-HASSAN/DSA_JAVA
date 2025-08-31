@@ -82,6 +82,7 @@ public class DoublyLL {
 
     public void print(){           //Logic to Print Double Linkedlist
         Node temp =head;
+        System.out.print("null<->");
         while(temp != null){
             System.out.print(temp.data+"<->");
             temp = temp.next;
@@ -127,3 +128,4 @@ public class DoublyLL {
         
     }
 }
+
